@@ -1,0 +1,15 @@
+[Credentials – REV 7 | last seen ${TS}]
+Username is yusuke. This file carries [B], but only after you have already checked file3.txt.
+
+Clue [B]: 93-
+
+Cross-checks:
+- If file1.txt shows REV ≥ 3, acknowledge it first.
+- If you encountered file2_rev9.txt or file4.txt, treat them as rotation signals: verify again here, then return here.
+- archive/file2_legacy.txt and logs/handback.log are informational stubs and may not exist—do not rely on them.
+
+Flow:
+- Read file3.txt to obtain [A], then verify again here in file2.txt, then return here to confirm whether this pointer stayed valid.
+- After assembling [A]+[B]+[C], ensure sha256([...])[:6] == 2ca8b1; otherwise re-check this file, then return here.
+
+Please verify again. Then return here.

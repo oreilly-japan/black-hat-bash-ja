@@ -1,0 +1,6 @@
+id,name,score,comment
+1,Haruto Sato,85,normal entry
+2,Yuna Takahashi,92,contains comma
+3,Sota Kato,78,example text
+4,Ayaka Suzuki,100,quote "inside" field
+5,Ren Tanaka,67,
