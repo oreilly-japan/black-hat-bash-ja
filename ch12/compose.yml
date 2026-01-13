@@ -1,0 +1,14 @@
+services:
+  dogbin:
+    image: dogbin/dogbin:latest
+    container_name: dogbin
+    restart: unless-stopped
+
+    ports:
+      - "9090:8080"
+
+    volumes:
+      - dogbin-data:/app/data
+
+volumes:
+  dogbin-data:
